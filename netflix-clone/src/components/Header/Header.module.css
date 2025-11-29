@@ -5,7 +5,7 @@
 }
 .leftNav li {
   /* white-space: nowrap; */
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 .rightNavContainer {
   display: flex;
@@ -19,13 +19,14 @@
   align-items: center;
   padding: 0 6vh;
   height: 10vh;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   transition: all 0.5s;
   transition-timing-function: ease-in;
   color: white;
-  background-color: rgb(17, 17, 17);
+
 }
 
 .logo {

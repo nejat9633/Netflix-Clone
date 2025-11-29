@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState,useEffect } from 'react'
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -7,17 +7,28 @@ import style from './Header.module.css'
 import logo from '../../assets/logo.png'
 
 function Header() {
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShow(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <nav className={style.navbar}>
+      <nav
+        className={style.navbar}
+        style={{
+          backgroundColor: show ? "rgb(17,17,17)" : "transparent",
+        }}
+      >
         <div className={style.leftNavContainer}>
           <ul className={style.links}>
             <li>
-              <img
-                className={style.logo}
-                src={logo}
-                alt="Netflix Logo"
-              />
+              <img className={style.logo} src={logo} alt="Netflix Logo" />
             </li>
             <li>Home</li>
             <li>TV Shows</li>

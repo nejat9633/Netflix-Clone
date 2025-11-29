@@ -1,0 +1,41 @@
+.banner {
+  color: white;
+  height: 90vh;
+  object-fit: contain;
+}
+.bannerContents {
+  /* margin: 0 0 10vh ; */
+  padding: 30vh 5vh;
+}
+.bannerTitle {
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.description {
+  width: 100vh;
+  padding: 1rem 0;
+}
+.buttons {
+  display: flex;
+  gap: 1.7rem; 
+}
+.play,
+.bannerButton {
+  padding: 1.5vh 5vh;
+  font-weight: 400;
+  display: flex;
+  align-items: center; 
+}
+.bannerButton {
+  background-color: rgba(84, 83, 83, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.2vw;
+}
+.bannerButton:hover {
+  color: #000;
+  background-color: #c6c6c6;
+  transition: all0.2s;
+}
