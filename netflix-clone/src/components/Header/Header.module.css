@@ -1,0 +1,33 @@
+.links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.leftNav li {
+  /* white-space: nowrap; */
+  flex-shrink: 0;
+}
+.rightNavContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6vh;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  color: white;
+  background-color: rgb(17, 17, 17);
+}
+
+.logo {
+  width: 5rem;
+}

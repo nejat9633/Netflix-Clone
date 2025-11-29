@@ -1,0 +1,31 @@
+.footer{
+color: rgb(186, 182, 182);
+padding: 5vh 0;
+}
+.innerConatiner{
+padding:3vh 30vh;
+}
+.footerIcons ul{
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+.footerLists li{
+    padding: 1.2vh;
+}
+.footerLists{
+color: rgb(186, 182, 182);
+display: flex;
+justify-content: space-between;
+padding:3vh 0;
+}
+
+.serviceCode {
+    border: 0.1rem solid rgb(186, 182, 182);
+    display: inline-block;
+    padding: 0 1vh;
+}
+.copyright {
+    padding: 1vh 0;
+    font-size: small;
+}
