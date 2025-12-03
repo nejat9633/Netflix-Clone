@@ -15,7 +15,6 @@ function Banner() {
         setMovie(
           res.data.results[Math.floor(Math.random() * res.data.results.length)]
         );
-        console.log(res.data.results);
       } catch (error) {
         console.log("error", error);
       }
@@ -30,7 +29,7 @@ function Banner() {
         className={style.banner}
         style={{
           backgroundSize: "cover",
-          backgroundImage: ` linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.0)),url('https://image.tmdb.org./t/p/original${movie?.backdrop_path}')`,
+          backgroundImage: ` linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.0)),url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
